@@ -1,0 +1,142 @@
+object AboutBox: TAboutBox
+  Left = 382
+  Top = 203
+  AutoSize = True
+  BorderIcons = set()
+  BorderStyle = 'bsDialog'
+  Caption = 'Despre...'
+  ClientHeight = 380
+  ClientWidth = 450
+  Color = 'clBtnFace'
+  Font.Charset = 'DEFAULT_CHARSET'
+  Font.Color = 'clWindowText'
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = set()
+  OldCreateOrder = True
+  Position = 'poScreenCenter'
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 450
+    Height = 380
+    TabOrder = 0
+    object Label4: TLabel
+      Left = 19
+      Top = 116
+      Width = 260
+      Height = 70
+      AutoSize = False
+      Caption = 'Contact us via:\r\n E-Mail:  \r\n  Maverick@sc32.moldnet.md\r\n FidoNet: 2:469/135.46'
+      Font.Charset = 'RUSSIAN_CHARSET'
+      Font.Color = 'clWhite'
+      Font.Height = -16
+      Font.Name = 'Courier New'
+      Font.Style = set()
+      ParentFont = False
+      Transparent = True
+    object SpeedButton1: TSpeedButton
+      Left = 2
+      Top = 359
+      Width = 446
+      Height = 19
+      Caption = 'C L O S E'
+      Flat = True
+      Font.Charset = 'RUSSIAN_CHARSET'
+      Font.Color = 'clWindowText'
+      Font.Height = -19
+      Font.Name = 'Courier New'
+      Font.Style = set()
+      ParentFont = False
+      OnClick = 'SpeedButton1Click'
+    object Bevel1: TBevel
+      Left = -11
+      Top = 189
+      Width = 300
+      Height = 2
+      Style = 'bsRaised'
+    object Bevel2: TBevel
+      Left = 444
+      Top = 187
+      Width = 2
+      Height = 166
+      Style = 'bsRaised'
+    object Image6: TImage
+      Left = 4
+      Top = 13
+      Width = 282
+      Height = 85
+      Center = True
+      Picture.Data = '<BIN 68226>'
+      Transparent = True
+    object VerLabel: TLabel
+      Left = 6
+      Top = 100
+      Width = 277
+      Height = 18
+      Alignment = 'taCenter'
+      AutoSize = False
+      Caption = 'Version: 2.01.00 beta'
+      Font.Charset = 'RUSSIAN_CHARSET'
+      Font.Color = 'clWindowText'
+      Font.Height = -16
+      Font.Name = 'Courier New'
+      Font.Style = set()
+      ParentFont = False
+      Transparent = True
+    object Label2: TLabel
+      Left = 16
+      Top = 113
+      Width = 260
+      Height = 70
+      AutoSize = False
+      Caption = 'Contact us via:\r\n E-Mail:  \r\n  Maverick@sc32.moldnet.md\r\n FidoNet: 2:469/135.46'
+      Font.Charset = 'RUSSIAN_CHARSET'
+      Font.Color = 'clWindowText'
+      Font.Height = -16
+      Font.Name = 'Courier New'
+      Font.Style = set()
+      ParentFont = False
+      Transparent = True
+    object Panel2: TPanel
+      Left = 288
+      Top = 3
+      Width = 158
+      Height = 188
+      BevelInner = 'bvLowered'
+      TabOrder = 0
+      object Image1: TImage
+        Left = 4
+        Top = 4
+        Width = 150
+        Height = 179
+        Cursor = 'crHandPoint'
+        Hint = 'Maverick AKA Oaserele Stas\r\n\r\nContact:\r\nE-Mail: Maverick@sc32.moldnet.md\r\nFidoNet: 2:469/135.46'
+        AutoSize = True
+        ParentShowHint = False
+        Picture.Data = '<BIN 80974>'
+        ShowHint = True
+        OnClick = 'Image1Click'
+    object Memo1: TMemo
+      Left = 4
+      Top = 193
+      Width = 438
+      Height = 163
+      Color = 'clBtnFace'
+      Ctl3D = False
+      Font.Charset = 'RUSSIAN_CHARSET'
+      Font.Color = 'clWindowText'
+      Font.Height = -12
+      Font.Name = 'Courier New'
+      Font.Style = set()
+      Lines.Strings = ['Project Manager & programming:', ' Oaserele Stas', '     Maverick@sc32.moldnet.md', '', 'Thanx to: ', '   Silence Software', '', 'Thanks specially for: Grigore Vasilache', '                       Grig@moldnet.md']
+      ParentCtl3D = False
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 1
+  object RxGradientCaption1: TRxGradientCaption
+    Captions = []
+    FormCaption = 'Despre...'
+    StartColor = 'clTeal'

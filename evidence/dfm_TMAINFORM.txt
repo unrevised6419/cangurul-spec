@@ -1,0 +1,329 @@
+object MainForm: TMainForm
+  Left = 207
+  Top = 189
+  BorderIcons = {'biSystemMenu', 'biMinimize'}
+  BorderStyle = 'bsSingle'
+  Caption = 'Cangur ver. 2.0'
+  ClientHeight = 434
+  ClientWidth = 632
+  Color = 'clBtnFace'
+  Constraints.MaxHeight = 480
+  Constraints.MaxWidth = 640
+  Font.Charset = 'DEFAULT_CHARSET'
+  Font.Color = 'clWindowText'
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = set()
+  Menu = 'MainMenu1'
+  OldCreateOrder = False
+  Scaled = False
+  OnActivate = 'FormActivate'
+  OnCloseQuery = 'FormCloseQuery'
+  OnCreate = 'FormCreate'
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Image1: TImage
+    Left = 273
+    Top = 43
+    Width = 325
+    Height = 379
+  object Image2: TImage
+    Left = 273
+    Top = 5
+    Width = 40
+    Height = 40
+    Picture.Data = '<BIN 2690>'
+    Transparent = True
+  object Bevel1: TBevel
+    Left = 0
+    Top = 0
+    Width = 632
+    Height = 2
+    Align = 'alTop'
+  object ToolBar1: TToolBar
+    Left = 0
+    Top = 2
+    Width = 27
+    Height = 432
+    Align = 'alLeft'
+    AutoSize = True
+    ButtonHeight = 23
+    Caption = 'ToolBar1'
+    EdgeBorders = {'ebRight', 'ebTop', 'ebBottom', 'ebLeft'}
+    EdgeInner = 'esLowered'
+    EdgeOuter = 'esRaised'
+    Flat = True
+    HotImages = 'EnabledButtons'
+    Images = 'NormalButtons'
+    TabOrder = 0
+    object ToolButton4: TToolButton
+      Left = 0
+      Top = 0
+      Hint = 'Iesire'
+      Caption = 'ToolButton4'
+      ImageIndex = 3
+      ParentShowHint = False
+      Wrap = True
+      ShowHint = True
+      OnClick = 'ToolButton4Click'
+    object ToolButton5: TToolButton
+      Left = 0
+      Top = 23
+      Hint = 'Executarea manuala'
+      Caption = 'ToolButton5'
+      ImageIndex = 4
+      ParentShowHint = False
+      Wrap = True
+      ShowHint = True
+      OnClick = 'ToolButton5Click'
+    object ToolButton6: TToolButton
+      Left = 0
+      Top = 46
+      Hint = 'Executarea automata'
+      Caption = 'ToolButton6'
+      ImageIndex = 5
+      ParentShowHint = False
+      Wrap = True
+      ShowHint = True
+      OnClick = 'ToolButton6Click'
+    object ToolButton2: TToolButton
+      Left = 0
+      Top = 69
+      Hint = 'Controlul textului'
+      Caption = 'ToolButton2'
+      ImageIndex = 1
+      ParentShowHint = False
+      Wrap = True
+      ShowHint = True
+      OnClick = 'ToolButton2Click'
+    object ToolButton3: TToolButton
+      Left = 0
+      Top = 92
+      Hint = 'Stoparea Executiei'
+      Caption = 'ToolButton3'
+      ImageIndex = 2
+      ParentShowHint = False
+      Wrap = True
+      ShowHint = True
+      OnClick = 'ToolButton3Click'
+    object ToolButton1: TToolButton
+      Left = 0
+      Top = 115
+      Hint = 'Executare'
+      Caption = 'ToolButton1'
+      ImageIndex = 0
+      ParentShowHint = False
+      ShowHint = True
+      OnClick = 'ToolButton1Click'
+  object Panel1: TPanel
+    Left = 27
+    Top = 2
+    Width = 209
+    Height = 432
+    Align = 'alLeft'
+    BevelInner = 'bvLowered'
+    TabOrder = 1
+    object Panel2: TPanel
+      Left = 2
+      Top = 2
+      Width = 205
+      Height = 20
+      Align = 'alTop'
+      TabOrder = 0
+      object SpeedButton1: TSpeedButton
+        Left = 4
+        Top = 2
+        Width = 63
+        Height = 16
+        Caption = 'Pas'
+        Flat = True
+        OnClick = 'SpeedButton1Click'
+      object SpeedButton2: TSpeedButton
+        Left = 71
+        Top = 2
+        Width = 63
+        Height = 16
+        Caption = 'Salt'
+        Flat = True
+        OnClick = 'SpeedButton2Click'
+      object SpeedButton3: TSpeedButton
+        Left = 138
+        Top = 2
+        Width = 63
+        Height = 16
+        Caption = 'Rotire'
+        Flat = True
+        OnClick = 'SpeedButton3Click'
+    object Memo1: TMemo
+      Left = 2
+      Top = 22
+      Width = 205
+      Height = 408
+      Font.Charset = 'RUSSIAN_CHARSET'
+      Font.Color = 'clNavy'
+      Font.Height = -12
+      Font.Name = 'Courier New'
+      Font.Style = set()
+      ParentFont = False
+      TabOrder = 1
+  object MainMenu1: TMainMenu
+    Images = 'MenuImageList'
+    Left = 32
+    Top = 112
+    object File1: TMenuItem
+      Caption = '&Fisier'
+      object FisierNou1: TMenuItem
+        Caption = 'Fisier Nou'
+        ImageIndex = 0
+        object FereastraNoua1: TMenuItem
+          Caption = 'Fereastra Noua'
+          ShortCut = 16471
+          OnClick = 'FereastraNoua1Click'
+        object ProgramNou1: TMenuItem
+          Caption = 'Program Nou'
+          ShortCut = 16464
+          OnClick = 'ProgramNou1Click'
+      object CitireFisier1: TMenuItem
+        Caption = 'Citire Fisier'
+        ImageIndex = 1
+        ShortCut = 16463
+        OnClick = 'CitireFisier1Click'
+      object SalvareFisier1: TMenuItem
+        Caption = 'Salvare Fisier'
+        ImageIndex = 2
+        ShortCut = 16467
+        OnClick = 'SalvareFisier1Click'
+      object N1: TMenuItem
+        Caption = '-'
+      object Iesire1: TMenuItem
+        Caption = 'Iesire'
+        ImageIndex = 3
+        ShortCut = 32856
+        OnClick = 'Iesire1Click'
+    object Editare1: TMenuItem
+      Caption = '&Editare'
+      object Copiere1: TMenuItem
+        Caption = 'Copy'
+        ShortCut = 16451
+        OnClick = 'Copiere1Click'
+      object Paste1: TMenuItem
+        Caption = 'Paste'
+        ShortCut = 16470
+        OnClick = 'Paste1Click'
+      object Cut1: TMenuItem
+        Caption = 'Cut'
+        ShortCut = 16472
+        OnClick = 'Cut1Click'
+    object Comenzi1: TMenuItem
+      Caption = '&Comenzi'
+      object ComenziSimple1: TMenuItem
+        Caption = 'Comenzi Simple'
+        object Pas1: TMenuItem
+          Caption = '&Pas'
+          ShortCut = 16496
+          OnClick = 'Pas1Click'
+        object Salt1: TMenuItem
+          Caption = '&Salt'
+          ShortCut = 16497
+          OnClick = 'Salt1Click'
+        object Rotire1: TMenuItem
+          Caption = '&Rotire'
+          ShortCut = 16498
+          OnClick = 'Rotire1Click'
+      object N4: TMenuItem
+        Caption = '-'
+      object ComenziCompuse1: TMenuItem
+        Caption = 'Comenzi Compuse'
+        object RepetaNori1: TMenuItem
+          Caption = 'Repeta <N> Ori'
+          ShortCut = 16499
+          OnClick = 'RepetaNori1Click'
+        object ProceduraNume1: TMenuItem
+          Caption = 'Procedura <Nume>'
+          ShortCut = 16500
+          OnClick = 'ProceduraNume1Click'
+        object ExecutaNumeProcedura1: TMenuItem
+          Caption = 'Executa <NumeProcedura>'
+          ShortCut = 16501
+          OnClick = 'ExecutaNumeProcedura1Click'
+        object CitConditie1: TMenuItem
+          Caption = 'Cit <Conditie>'
+          ShortCut = 16502
+          OnClick = 'CitConditie1Click'
+        object DacaConditieAltfel1: TMenuItem
+          Caption = 'Daca <Conditie> [Comanda1] Altfel [Comanda2]'
+          ShortCut = 16503
+          OnClick = 'DacaConditieAltfel1Click'
+    object Optiuni1: TMenuItem
+      Caption = '&Optiuni'
+      object ConfigurareaVitezei1: TMenuItem
+        Caption = 'Configurarea Vitezei'
+        OnClick = 'ConfigurareaVitezei1Click'
+      object SelectLanguage1: TMenuItem
+        Caption = 'Language...'
+    object Ajutor1: TMenuItem
+      Caption = '&Ajutor'
+      object Ajutor2: TMenuItem
+        Caption = 'Ajutor'
+        ImageIndex = 4
+        ShortCut = 112
+        OnClick = 'Ajutor2Click'
+      object N3: TMenuItem
+        Caption = '-'
+      object Despre1: TMenuItem
+        Caption = 'Despre...'
+        OnClick = 'Despre1Click'
+  object EnabledButtons: TImageList
+    Left = 64
+    Top = 176
+    Bitmap = '<BIN 8572>'
+  object NormalButtons: TImageList
+    Left = 32
+    Top = 176
+    Bitmap = '<BIN 8572>'
+  object MenuImageList: TImageList
+    Left = 32
+    Top = 144
+    Bitmap = '<BIN 8572>'
+  object RxGradientCaption1: TRxGradientCaption
+    Captions = []
+    FormCaption = 'Cangur ver. 2.0'
+    StartColor = 'clTeal'
+    Left = 32
+    Top = 80
+  object OpenDialog1: TOpenDialog
+    Filter = 'Cangourou Files|*.cng|All Files|*.*'
+    Left = 64
+    Top = 48
+  object SaveDialog1: TSaveDialog
+    Filter = 'Cangourou Files|*.cng|All Files|*.*'
+    Left = 32
+    Top = 48
+  object Wave1: TWave
+    WaveData.Data = '<BIN 13464>'
+    Left = 32
+    Top = 210
+  object Wave2: TWave
+    WaveData.Data = '<BIN 48640>'
+    Left = 64
+    Top = 210
+  object Wave3: TWave
+    WaveData.Data = '<BIN 17864>'
+    Left = 96
+    Top = 210
+  object Wave4: TWave
+    WaveData.Data = '<BIN 14892>'
+    Left = 128
+    Top = 210
+  object Wave5: TWave
+    WaveData.Data = '<BIN 35312>'
+    Left = 160
+    Top = 210
+  object Wave6: TWave
+    WaveData.Data = '<BIN 140336>'
+    Left = 192
+    Top = 210
+  object Wave7: TWave
+    WaveData.Data = '<BIN 174384>'
+    Left = 224
+    Top = 210

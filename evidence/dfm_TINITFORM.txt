@@ -1,0 +1,77 @@
+object InitForm: TInitForm
+  Left = 388
+  Top = 353
+  HorzScrollBar.Visible = False
+  VertScrollBar.Visible = False
+  BorderIcons = set()
+  BorderStyle = 'bsSingle'
+  Caption = 'Cangourou 2.20.00 Loading...'
+  ClientHeight = 161
+  ClientWidth = 376
+  Color = 'clBtnFace'
+  Font.Charset = 'DEFAULT_CHARSET'
+  Font.Color = 'clWindowText'
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = set()
+  OldCreateOrder = False
+  Position = 'poScreenCenter'
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Image1: TImage
+    Left = 0
+    Top = 0
+    Width = 376
+    Height = 105
+    Align = 'alTop'
+    AutoSize = True
+    Center = True
+    Picture.Data = '<BIN 118506>'
+    Transparent = True
+  object Label1: TLabel
+    Left = 0
+    Top = 105
+    Width = 376
+    Height = 18
+    Align = 'alTop'
+    Alignment = 'taCenter'
+    Caption = 'Copyright (C) 1999 Silence Software'
+    Font.Charset = 'ANSI_CHARSET'
+    Font.Color = 'clWindowText'
+    Font.Height = -16
+    Font.Name = 'Courier New'
+    Font.Style = set()
+    ParentFont = False
+  object ProgressBar1: TProgressBar
+    Left = 0
+    Top = 148
+    Width = 376
+    Height = 13
+    Align = 'alBottom'
+    Min = 0
+    Max = 100
+    TabOrder = 0
+  object Edit1: TEdit
+    Left = 0
+    Top = 124
+    Width = 377
+    Height = 23
+    Color = 'clBtnFace'
+    Ctl3D = True
+    Font.Charset = 'RUSSIAN_CHARSET'
+    Font.Color = 'clWindowText'
+    Font.Height = -12
+    Font.Name = 'Courier New'
+    Font.Style = set()
+    HideSelection = False
+    ParentCtl3D = False
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 1
+    Text = 'Starting Cangourou 2.20.00             Please Wait...'
+  object RxGradientCaption1: TRxGradientCaption
+    Captions = []
+    FormCaption = 'Cangourou 2.20.00 Loading...'
+    StartColor = 'clTeal'
+    Left = 80
+    Top = 56
